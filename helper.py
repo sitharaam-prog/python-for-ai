@@ -1,4 +1,5 @@
 import matplotlib.pyplot as plt
+from math import pi
 
 def draw_bar() :
 
@@ -31,3 +32,7 @@ def draw_pie() :
 
     # Show chart
     plt.show()
+
+def find_area_of_cylinder(radius_base, height):
+    area = ( 2 * pi * (radius_base ** 2) ) + ( 2 * pi * radius_base * height)
+    return area   
